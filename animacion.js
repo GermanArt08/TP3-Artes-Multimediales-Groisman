@@ -210,7 +210,7 @@ function demoraPorMovimiento() {
     }
 
     const avance = Math.min(1, (uniones - 2) / 200);
-    return 500 - avance * 495;
+    return (500 - avance * 495) / 4;
 }
 
 function animar(marcaDeTiempo) {
