@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experimento interactivo de agregación limitada por difusión.">
+    <title>Ramificaciones aleatorias</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="animacion.js" defer></script>
+</head>
+<body>
+    <div class="pagina">
+        <header class="encabezado">
+            <p class="etiqueta">Experimento de crecimiento</p>
+            <h1>Difusión limitada por agregación (DLA)</h1>
+        </header>
+
+        <main class="contenido">
+            <nav class="controles" aria-label="Controles de la animación">
+                <button id="iniciar" type="button">Iniciar animación</button>
+                <button id="reiniciar" type="button">Reiniciar</button>
+                <button id="pausar" type="button">Pausar</button>
+                <span id="estado" role="status" aria-live="polite">Presioná Iniciar animación para comenzar.</span>
+            </nav>
+
+            <section class="escenario" aria-label="Animación de partículas">
+                <canvas id="lienzo" aria-label="Partículas rojas, naranjas y amarillas forman una ramificación sobre fondo negro.">
+                    Tu navegador no permite mostrar esta animación.
+                </canvas>
+            </section>
+
+            <p class="ayuda">Al principio, una flecha muestra el próximo movimiento aleatorio de la partícula activa.</p>
+            <footer>
+                <h2>Trabajo Práctico N°3, Artes Multimediales 1 Cátedra Groisman</h2>
+                <h2>Juan Carol Lugones y Germán Zariz Lüchter</h2>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
